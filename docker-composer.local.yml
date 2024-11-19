@@ -12,7 +12,7 @@ services:
     depends_on:
       - mysql_pandacode
     volumes:
-      - .:/app:z
+      - .:/var/www/pandacode:z
     env_file:
       - ./.envs/.local/php.conf
       - ./.envs/.local/mysql.conf
